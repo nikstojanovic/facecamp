@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Welcome to Facecamp</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- log in -->
+
+        <div id="logIn" class="tabcontent">
+            <img src="img/logo.png" alt="facecamp logo" width="150px">
+            <h3 class="black-letters">Facecamp - log in</h3>
+            <input type="text" id="logEmail" placeholder="Email">
+            <input type="password" id="logPassword" placeholder="Password">
+            <input type="button" onclick="logIn()" value="Log in">
+        </div>
+
+        <!-- sign up -->
+
+        <div id="signUp" class="tabcontent">
+            <h3>Sign up</h3>
+            <div class="wrap-input">
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+            </div>
+            <input type="text" id="tel" placeholder="Telephone number">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="pass" placeholder="New password">
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="sex" checked />
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="sex" />
+            <input type="button" onclick="signUp()" value="Sign up">
+        </div>
+    </div>
+    <div id="statusBox"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/md5.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

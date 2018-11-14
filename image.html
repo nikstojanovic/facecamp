@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facecamp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body onload="checkLogin(), loadImageData()">
+
+        <!-- HEADER -->
+
+        <header>
+            <div class="brand">
+                <img src="img/logo.png" alt="facecamp logo" width="50px" height="50px"/>
+                <p>Facecamp</p>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+            </nav>
+        </header>
+
+        <!-- CONTENT -->
+
+        <div class="wrapper">
+            <div id="errors"></div>
+            <div id="success"></div>
+            <div class="content">
+                <div class="left-sidebar" id="image-container">
+                    <div id="image"></div>
+                </div>
+                <div class="main-content" id="image-comments-container">
+                    <div class="image-meta">
+                        <div id="author-image"></div>
+                        <div id="author-name"></div>
+                    </div>
+                    <div id="comments"></div>
+                    <div class="add-comment">
+                        <input type="text" id="new-comment" placeholder="Insert comment" maxlength="20"/>
+                        <button onclick="addComment()">Add Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/declare.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/image.js"></script>
+</html>
